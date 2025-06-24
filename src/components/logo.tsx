@@ -9,7 +9,7 @@ export const Logo = () => {
           src="/logo.png"
           alt="logo root up growth"
           width={150}
-          height={60}
+          height={30}
           priority={true}/>
       </div>
   )
