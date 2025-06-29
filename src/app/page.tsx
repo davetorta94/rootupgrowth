@@ -1,4 +1,6 @@
 import { Cover } from "@/components/cover";
+import { Cta } from "@/components/CTA";
+import { Garden } from "@/components/garden";
 import { Leaf } from "@/components/leaf";
 import { Logo } from "@/components/logo";
 import { Navbar } from "@/components/navbar";
@@ -15,15 +17,17 @@ export default function Home() {
 
     </header>
 
-    <section className="flex justify-center w-full h-200">
+    <section className="flex justify-center w-full h-150">
       
       <Title />
 
     </section>
 
-    <section className="flex justify-center w-full h-100">
+    <section className="flex flex-col justify-center w-full h-100">
       
       <Cover />
+      <Garden />
+      <Cta />
 
     </section>
 

@@ -44,10 +44,26 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@font-face {
+  font-family: 'Harmoni';
+  src: url('/fonts/Harmoni.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LektonLight';
+  src: url('/fonts/lekton005_l.otf') format('opentype');
+  font-weight: 300; /* Puedes ajustar el weight si quieres */
+  font-style: normal;
+}
+
 body {
-  /*background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;*/
+  font-family: 'LektonLight', sans-serif;
+}
+
+h1, h2, h4 {
+  font-family: 'Harmoni', sans-serif;
 }
 
 /*---break---*/
@@ -122,6 +138,9 @@ body {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+
+
+
 
 /*---break---*/
 
