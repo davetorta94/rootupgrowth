@@ -17,7 +17,7 @@ export default function Home() {
 
     </header>
 
-    <section className="flex justify-center w-full h-150">
+    <section className="flex justify-center w-full h-200">
       
       <Title />
 
