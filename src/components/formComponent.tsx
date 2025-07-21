@@ -23,7 +23,7 @@ export const FormComponent = () => {
 
 const StyledWrapper = styled.div`
   .form-container {
-    width: 400px;
+    width: 350px;
     border: 2px solid #000;
     padding: 32px 24px;
     font-size: 14px;
