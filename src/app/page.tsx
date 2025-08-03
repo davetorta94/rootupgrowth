@@ -1,24 +1,14 @@
 import { Cover } from "@/components/cover";
 import { Cta } from "@/components/CTA";
 import { Garden } from "@/components/garden";
-import { Leaf } from "@/components/leaf";
-import { Logo } from "@/components/logo";
-import { Navbar } from "@/components/navbar";
-//import { ResponsiveGarden } from "@/components/responsiveGarden";
+import { Presentation } from "@/components/presentation";
 import { Title } from "@/components/title";
 
 export default function Home() {
   return (
   <>
-    <header className="flex justify-between w-full h-50">
 
-      <Leaf />
-      <Navbar />
-      <Logo />
-
-    </header>
-
-    <section className="flex justify-center w-full h-200">
+    <section className="flex justify-center w-full h-200 sm:h-100">
       
       <Title />
 
@@ -26,8 +16,8 @@ export default function Home() {
 
     <section className="flex flex-col justify-center w-full h-100">
       
+      <Presentation/>
       <Cover />
-      {/*<ResponsiveGarden />*/}
       <Garden />
       <Cta />
 

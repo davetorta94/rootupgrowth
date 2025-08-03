@@ -20,8 +20,8 @@ export const Navbar = () => {
                 SERVICES
             </Link>
 
-            <Link href={"/title"} className="px-4">
-                EXPERTISE
+            <Link href={"/premios"} className="px-4">
+                            PREMIOS
             </Link>
 
             <Link href={"/title"} className="px-4">
@@ -37,18 +37,18 @@ export const Navbar = () => {
             </Link>
         </div>
         {/* RESPONSIVE MENU */}
-        <div className="block md:hidden border-amber-800">
+        <div className="block md:hidden">
             <button onClick={HandleOnClick}>MENU</button>
             {
                 display ?
                 (
                     <div className="flex flex-col">
                         <Link href={"/title"} className="px-4">
-                            SERVICES
+                            SERVICIOS
                         </Link>
 
-                        <Link href={"/title"} className="px-4">
-                            EXPERTISE
+                        <Link href={"/premios"} className="px-4">
+                            PREMIOS
                         </Link>
 
                         <Link href={"/title"} className="px-4">

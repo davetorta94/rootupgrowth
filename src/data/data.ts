@@ -2,7 +2,7 @@
 
 // AQUI VAN LAS MARCAS Y LOGOS CON LOS QUE ROOT UP GROWTH HA TRABAJADO
 
-import { Brand } from "./definitions";
+import { Brand, Price } from "./definitions";
 
 
 export const brands: Brand[] = [
@@ -114,43 +114,11 @@ export const brands: Brand[] = [
         id: 27,
         img: "/webp/48.webp"
     },
-   
-
 
 ]
 
+// AQUI VAN LOS PREMIOS
 
-/* 
-     {
-        id: 20,
-        img: "/webp/41.webp"
-    },
-    {
-        id: 21,
-        img: "/webp/42.webp"
-    },
-    {
-        id: 22,
-        img: "/webp/43.webp"
-    },
-    {
-        id: 23,
-        img: "/webp/44.webp"
-    },
-    {
-        id: 24,
-        img: "/webp/45.webp"
-    },
-    {
-        id: 25,
-        img: "/webp/46.webp"
-    },
-    {
-        id: 26,
-        img: "/webp/47.webp"
-    },
-    {
-        id: 27,
-        img: "/webp/48.webp"
-    },
-*/
+export const prices: Price[] = [
+    
+]
