@@ -1,3 +1,4 @@
+import './styles.css';
 import { Cover } from "@/components/cover";
 import { Cta } from "@/components/CTA";
 import { Garden } from "@/components/garden";
