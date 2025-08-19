@@ -11,3 +11,9 @@ export type Price = {
     img: string;
     logo: string;
 }
+
+export type Service = {
+    id: number;
+    name: string;
+    description: string;
+}

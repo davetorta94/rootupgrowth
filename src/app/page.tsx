@@ -3,6 +3,7 @@ import { Cover } from "@/components/cover";
 import { Cta } from "@/components/CTA";
 import { Garden } from "@/components/garden";
 import { Presentation } from "@/components/presentation";
+import { Services } from '@/components/services';
 import { Title } from "@/components/title";
 
 export default function Home() {
@@ -18,9 +19,11 @@ export default function Home() {
     <section className="flex flex-col justify-center w-full h-100">
       
       <Presentation/>
+      <Services />
       <Cover />
       <Garden />
       <Cta />
+      
 
     </section>
 

@@ -7,7 +7,7 @@ export const Cta = () => {
         <div className="flex justify-center mb-2.5">
             <button className="border-dashed rounded-xl border-2 border-amber-600 p-3 hover:bg-amber-600 hover:text-white">
               <Link href='/form'>
-                Join
+                ¿Te unes al vivero?
               </Link>
             </button>
         </div>
