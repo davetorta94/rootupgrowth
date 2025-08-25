@@ -7,7 +7,7 @@ export const Cover = () => {
     <>
           <div className="flex justify-center h-80 pt-[250px] sm:mt-15 sm:h-10 md:mt-15">
                 <h2 className='text-8xl text-[#5a22f5]'>
-                <TypingAnimation startOnView duration={100}>NUESTRO PEQUEÑO JARDIN</TypingAnimation>
+                <TypingAnimation startOnView duration={100}>Nuestro pequeño jardin</TypingAnimation>
                 </h2>
 
           </div>
