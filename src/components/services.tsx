@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { abonos } from "@/data/data";
 
 
