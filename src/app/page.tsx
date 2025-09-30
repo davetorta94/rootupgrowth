@@ -1,7 +1,5 @@
 import './styles.css';
-import { Cover } from "@/components/cover";
 import { Cta } from "@/components/CTA";
-import { Garden } from "@/components/garden";
 import { Presentation } from "@/components/presentation";
 import { Services } from '@/components/services';
 import { Title } from "@/components/title";
@@ -20,8 +18,7 @@ export default function Home() {
       
       <Presentation/>
       <Services />
-      <Cover />
-      <Garden />
+      
       <Cta />
       
 
