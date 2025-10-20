@@ -1,7 +1,8 @@
+import { About } from '@/components/about';
 import './styles.css';
 import { Cta } from "@/components/CTA";
 import { Presentation } from "@/components/presentation";
-import { Services } from '@/components/services';
+//import { Services } from '@/components/services';
 import { Title } from "@/components/title";
 
 export default function Home() {
@@ -17,8 +18,11 @@ export default function Home() {
     <section className="flex flex-col justify-center w-full h-100">
       
       <Presentation/>
-      <Services />
-      
+
+     {/* <Services /> */}
+
+      <About />
+
       <Cta />
       
 
