@@ -10,7 +10,7 @@ export default function Home() {
   return (
   <>
 
-    <section className="flex justify-center w-full h-200 sm:h-100">
+    <section className="flex justify-center w-full h-100 sm:h-100">
       
       <Title />
 
@@ -24,7 +24,7 @@ export default function Home() {
 
       <About />
 
-    <div className='flex flex-col md:flex-row-reverse md:justify-around mt-4'>
+    <div className='flex justify-center'>
       <VideoSample />
     </div>
 
