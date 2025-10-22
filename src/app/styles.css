@@ -11,6 +11,7 @@
     box-shadow: 5px 5px 2.5px 6px rgb(0, 0, 0); /* Shadow effect */
     z-index: 1;
   }
+  
 
   .video {
     position: absolute;
