@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <>
 
-    <div className="flex flex-col md:flex-row-reverse md:justify-around">
+    <div className="flex flex-col md:flex-row-reverse md:justify-around pb-4 animate-fade-up animate-ease-in-out animate-delay-[2000ms]">
 
 
         <div className="flex justify-center">

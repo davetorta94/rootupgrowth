@@ -24,9 +24,9 @@ export default function Home() {
 
       <About />
 
-    <div className='flex justify-center'>
+    
       <VideoSample />
-    </div>
+    
 
       <Cta />
       
