@@ -4,7 +4,7 @@ export const VideoSample = () => {
   return (
     <>
 
-      <div className="flex flex-col md:flex-row justify-center items-centre md:justify-evenly bg-[#5a22f5] shadow-2xl">
+      <div className="flex flex-col md:flex-row justify-center items-centre md:justify-evenly shadow-2xl section-pattern">
 
             <div>
               <TiktokNumberTicker />
