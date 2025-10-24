@@ -10,7 +10,7 @@ export const VideoSample = () => {
               <TiktokNumberTicker />
             </div>
     
-            <div className="flex flex-col items-center justify-center min-h-screen bg-[#5a22f5] px-4">
+            <div className="flex flex-col items-center justify-center min-h-screen px-4">
               <div className="video-container w-[285px] h-[600px] max-w-full flex flex-col items-center relative">
                 <span className="video-top-border" />
                 <video className="video" width="320" height="592" autoPlay muted loop>
