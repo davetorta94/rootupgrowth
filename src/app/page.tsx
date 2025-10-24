@@ -10,13 +10,13 @@ export default function Home() {
   return (
   <>
 
-    <section className="flex justify-center w-full h-100 sm:h-100">
+    <section className="flex justify-center w-full h-100">
       
       <Title />
 
     </section>
 
-    <section className="flex flex-col justify-center w-full h-100">
+    <section className="flex flex-col w-full h-100">
       
       <Presentation/>
 
