@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <>
 
-    <motion.div className="flex flex-col md:flex-row-reverse md:justify-around pb-4"
+    <motion.div className="flex flex-col md:flex-row-reverse md:justify-around py-4 mt-9"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
