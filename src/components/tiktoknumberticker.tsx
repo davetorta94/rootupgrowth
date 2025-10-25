@@ -30,7 +30,7 @@ export function TiktokNumberTicker() {
         <Highlighter>Y CRECIENDO...</Highlighter>
     </div>
 
-    <Image src={mariposa} width={400} height={400} alt="background flower" className="animate-rotate-y animate-delay-[1500ms] hidden md:flex" />
+    <Image src={mariposa} width={400} height={400} alt="background flower" className="animate-rotate-y animate-delay-[6000ms] hidden md:flex" />
 
     </motion.div>
     </>
