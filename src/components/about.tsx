@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <>
 
-    <motion.div className="flex flex-col md:flex-row-reverse md:justify-around py-6 mt-9 md:pt-0 md:mt-2"
+    <motion.div className="flex flex-col md:flex-row-reverse md:justify-around py-6 mt-9 md:pt-0 md:mt-2 md:mb-10"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -16,7 +16,7 @@ export const About = () => {
 
         <div className="flex justify-center">
 
-           <img src="/about-me-photo.webp" 
+           <img src="/about-me-photo-resized.webp" 
                alt="about me photo"
                width={500}
                height={150}
