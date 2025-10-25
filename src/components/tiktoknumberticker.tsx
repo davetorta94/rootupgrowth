@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "motion/react"; 
+
 import Image from "next/image"
 import { Highlighter } from "./magicui/highlighter"
 import { NumberTicker } from "./magicui/number-ticker"
@@ -9,7 +13,11 @@ export function TiktokNumberTicker() {
   return (
     <>
     
-    <div className="flex flex-col pt-20 items-center">
+    <motion.div className="flex flex-col pt-20 items-center"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: "easeOut" }}>
 
      <NumberTicker
       value={3325}
@@ -24,7 +32,7 @@ export function TiktokNumberTicker() {
 
     <Image src={mariposa} width={400} height={400} alt="background flower" className="animate-rotate-y animate-delay-[1500ms] hidden md:flex" />
 
-    </div>
+    </motion.div>
     </>
   )
 }

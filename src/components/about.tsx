@@ -1,10 +1,17 @@
+"use client"
+
+import { motion } from "motion/react"; 
 
 
 export const About = () => {
   return (
     <>
 
-    <div className="flex flex-col md:flex-row-reverse md:justify-around pb-4 animate-fade-up animate-ease-in-out animate-delay-[2000ms]">
+    <motion.div className="flex flex-col md:flex-row-reverse md:justify-around pb-4"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2, ease: "easeOut" }}>
 
 
         <div className="flex justify-center">
@@ -25,7 +32,7 @@ export const About = () => {
 
         
 
-    </div>
+    </motion.div>
     </>
   )
 }

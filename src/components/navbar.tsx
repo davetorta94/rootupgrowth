@@ -16,6 +16,11 @@ export const Navbar = () => {
     <>
         {/* MENU */}
         <div className="hidden md:flex">
+
+            <Link href={"/"} className="px-4">
+                HOME
+            </Link>
+
             <Link href={"/title"} className="px-4">
                 SERVICES
             </Link>
@@ -43,6 +48,10 @@ export const Navbar = () => {
                 display ?
                 (
                     <div className="flex flex-col">
+                        <Link href={"/"} className="px-4">
+                            HOME
+                        </Link>
+
                         <Link href={"/title"} >
                             SERVICIOS
                         </Link>

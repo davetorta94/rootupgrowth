@@ -5,6 +5,7 @@ import { Presentation } from "@/components/presentation";
 //import { Services } from '@/components/services';
 import { Title } from "@/components/title";
 import { VideoSample } from '@/components/video-sample';
+import { Footer } from '@/components/footer';
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
     
 
       <Cta />
+
+      <Footer />
       
 
     </section>
