@@ -1,4 +1,5 @@
-
+import Image from "next/image";
+import  arrow  from "../../public/arrow.png"
 
 
 
@@ -7,13 +8,11 @@
 export const Presentation = () => {
   return (
     <>
-    <section className="flex justify-center font-bold h-40 px-3.5 pt-[100px]  sm:mt-68 sm:h-20 md:mt-32">
-    <div className="max-w-3xl text-center space-y-6">
-    <h2 className="text-4xl font-extrabold text-gray-900">
-     
-    </h2>
-  </div>
-  </section>
+    <section className="md:flex justify-center px-3.5 sm:mb-68 sm:h-20 hidden">
+      <div>
+        <Image src={arrow} width={540} height={540} alt="flecha decorativa" className="p-0 m-0"/>
+      </div>
+    </section>
     </>
   )
 }

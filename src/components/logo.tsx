@@ -10,8 +10,8 @@ export const Logo = () => {
           <Image 
           src="/logo.png"
           alt="logo root up growth"
-          width={100}
-          height={30}
+          width={256}
+          height={256}
           priority={true}/>
       </div>
 
@@ -20,8 +20,8 @@ export const Logo = () => {
           <Image 
           src="/logo.png"
           alt="logo root up growth"
-          width={50}
-          height={15}
+          width={128}
+          height={128}
           priority={true}/>
       </div>
     </>

@@ -123,45 +123,45 @@ export const premios: Price[] = [
     
 ]
 
-export const abonos: Service[] = [
+export const services: Service[] = [
     {
         id: 1,
-        name: "Mentorias",
-        description: "para crecer en redes. Aqui empieza todo. Una idea, una marca, una intención estas sesiones sembramos claridad propósito y acción"
+        name: "MENTORIAS",
+        description: "Para crecer en redes. Aqui empieza todo. Una idea, una marca, una intención estas sesiones sembramos claridad propósito y acción"
     },
     {
         id: 2,
-        name: "Creación de contenido + redes sociales",
+        name: "CREACION DE CONTENIDO + RSS",
         description: "El contenido es el tallo que conecta tu esencia con tu audiencia. Creamos, planificamos y publicamos con coherencia y estilo."
     },
     {
         id: 3,
-        name: "Campañas de Paid Media",
+        name: "CAMPAÑAS DE PAID MEDIA",
         description: "El viento sopla más fuerte cuando se invierte con cabeza. Campañas que vuelan alto, con análisis, propósito y retorno."
     },
     {
         id: 4,
-        name: "Edición de vídeo",
-        description: "El crecimiento se nota cuando hay movimiento. Editamos los vídeos que capturan lo que tu marca quiere expresar."
+        name: "EDICION DE VIDEO",
+        description: "El crecimiento se nota cuando hay movimiento. Editamos los videos que capturan lo que tu marca quiere expresar."
     },
     {
         id: 5,
-        name: "Manejo de redes sociales",
+        name: "MANEJO DE REDES SOCIALES",
         description: "Para que tu presencia digital tenga base sólida y crezca sana. Tú te enfocas en tu negocio, yo riego tu comunidad."
     },
     {
         id: 6,
-        name: "Estrategia de crecimiento personalizada",
+        name: "ESTRATEGIA DE CRECIMIENTO",
         description: "Cada marca florece a su ritmo, pero con una estrategia adecuada, crece con fuerza y dirección. Diseñamos tu plan de expansión."
     },
     {
         id: 7,
-        name: "Fotografía profesional",
+        name: "FOTOGRAFIA PROFESIONAL",
         description: "Cada hoja cuenta una historia. Sesiones para marcas que necesitan imágenes que comuniquen, inspiren y vendan."
     },
     {
         id: 8,
-        name: "Diseño gráfico y maquetación",
-        description: "Deja que la gente se lleve tus flores a otros lugares. Diseño para piezas físicas o digitales que complementan tu jardin"
+        name: "DISEÑO GRÁFICO Y MAQUETACION",
+        description: "Deja que la gente se lleve tus flores a otros lugares. Diseño para piezas fisicas o digitales que complementan tu jardin"
     }
 ]

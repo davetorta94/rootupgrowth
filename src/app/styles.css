@@ -69,12 +69,65 @@
   }
 
   .section-pattern {
-  
-  /* Add your background pattern here */
   background-color: #5a22f5;
   background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px
+}
+
+
+/* service cards*/
+.service-card {
+  width: 300px;
+  height: 250px;
+  translate: -6px -6px;
+  background: #5a22f5;
+  color: beige;
+  border: 3px solid #000000;
+  box-shadow: 12px 12px 0 #000000;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.service-head {
+  width: 100%;
+  height: 32px;
+  font-weight: bold;
+  background: #ffffff;
+  padding: 5px 12px;
+  color: #000000;
+  border-bottom: 3px solid #000000;
+}
+
+.service-content {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0 #000000;
+  background: #4ade80;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-button:hover {
+  translate: 1.5px 1.5px;
+  box-shadow: 1.5px 1.5px 0 #000000;
+  background: #1ac2ff;
+}
+
+.service-button:active {
+  translate: 3px 3px;
+  box-shadow: 0 0 0 #000000;
+}
+
+.service-card:hover {
+  translate: -6px;
 }
 
 

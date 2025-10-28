@@ -6,6 +6,7 @@ import { Presentation } from "@/components/presentation";
 import { Title } from "@/components/title";
 import { VideoSample } from '@/components/video-sample';
 import { Footer } from '@/components/footer';
+import { Services } from '@/components/services';
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
 
     
       <VideoSample />
+
+      <Services />
     
 
       <Cta />
