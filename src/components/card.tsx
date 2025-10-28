@@ -15,7 +15,6 @@ export const Card = () => {
           <div className="service-content">
             {description}
             <br />
-            <button className="service-button">+Info</button>
           </div>
         </div>
     ))}

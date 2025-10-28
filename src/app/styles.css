@@ -105,27 +105,6 @@
   font-weight: 600;
 }
 
-.service-button {
-  padding: 5px 10px;
-  margin-top: 10px;
-  border: 3px solid #000000;
-  box-shadow: 3px 3px 0 #000000;
-  background: #4ade80;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.service-button:hover {
-  translate: 1.5px 1.5px;
-  box-shadow: 1.5px 1.5px 0 #000000;
-  background: #1ac2ff;
-}
-
-.service-button:active {
-  translate: 3px 3px;
-  box-shadow: 0 0 0 #000000;
-}
-
 .service-card:hover {
   translate: -6px;
 }
