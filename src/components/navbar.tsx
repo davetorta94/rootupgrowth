@@ -36,11 +36,8 @@ export const Navbar = () => {
             <Link href={"/title"} className="px-4">
                 ABOUT US
             </Link>
-
-            <Link href={"/title"} className="px-4">
-                RSS
-            </Link>
         </div>
+
         {/* RESPONSIVE MENU */}
         <div className="block md:hidden px-5">
             <button onClick={HandleOnClick}>MENU</button>
@@ -66,10 +63,6 @@ export const Navbar = () => {
 
                         <Link href={"/title"} >
                             ABOUT
-                        </Link>
-
-                        <Link href={"/title"} >
-                            RSS
                         </Link>
                     </div>
                 ) :

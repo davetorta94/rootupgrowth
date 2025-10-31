@@ -1,4 +1,3 @@
-
 import { services } from "@/data/data";
 
 
@@ -11,9 +10,8 @@ export const Card = () => {
     {services.map(({ id, name, description }) => (
        <div className="service-card"
             key={id}>
-          <div className="service-head">{name}</div>
           <div className="service-content">
-            {description}
+            {name}
             <br />
           </div>
         </div>
