@@ -12,7 +12,6 @@ interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
 
 export function Marquee({
   className,
-  reverse = false,
   pauseOnHover = true,
   children,
   vertical = false,
