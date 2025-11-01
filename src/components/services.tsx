@@ -1,5 +1,5 @@
 import { Card } from "./card";
-import { Marquee } from "./magicui/marquee";
+import { ScrollVelocityContainer, ScrollVelocityRow, } from "./magicui/scroll-based-velocity";
 
 
 
@@ -21,10 +21,15 @@ export const Services = () => {
     </p>
   </div>
 
-  <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-    <Marquee>
-      <Card />
-    </Marquee>
+  <div className="flex justify-center gap-6 max-w-6xl mx-auto">
+      <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
+  <ScrollVelocityRow baseVelocity={1} direction={1}>
+    <Card />
+  </ScrollVelocityRow>
+  <ScrollVelocityRow baseVelocity={1} direction={-1}>
+    <Card />
+  </ScrollVelocityRow>
+</ScrollVelocityContainer>
   </div>
 
 </section>

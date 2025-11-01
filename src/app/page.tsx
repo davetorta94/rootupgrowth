@@ -26,10 +26,10 @@ export default function Home() {
 
       <About />
 
+      <Services />
     
       <VideoSample />
 
-      <Services />
     
 
       <Cta />

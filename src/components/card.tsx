@@ -8,7 +8,7 @@ export const Card = () => {
   return (
     <>
     {services.map(({ id, name }) => (
-       <div className="service-card"
+       <div className="mb-3.5"
             key={id}>
           <div className="service-content">
             {name}
