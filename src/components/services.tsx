@@ -23,10 +23,10 @@ export const Services = () => {
 
   <div className="flex justify-center gap-6 max-w-6xl mx-auto">
       <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
-  <ScrollVelocityRow baseVelocity={1} direction={1}>
+  <ScrollVelocityRow baseVelocity={3} direction={1}>
     <Card />
   </ScrollVelocityRow>
-  <ScrollVelocityRow baseVelocity={1} direction={-1}>
+  <ScrollVelocityRow baseVelocity={3} direction={-1}>
     <Card />
   </ScrollVelocityRow>
 </ScrollVelocityContainer>
