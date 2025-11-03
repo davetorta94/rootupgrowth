@@ -76,7 +76,8 @@
 }
 
 
-/* service cards*/
+/* previous service cards*/
+
 /*.service-card {
   width: 300px;
   height: 125px;
@@ -111,5 +112,125 @@
   translate: -6px;
 }
 
+/* Clases boton sección services */
 
+.info-btn {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  color: #5a22f5;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+.gradient-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
   
+}
+
+.label-btn {
+  position: relative;
+  top: -1px;
+}
+
+
+
+.transition-btn {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background: #3e4146;
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-btn:hover .transition-btn {
+  width: 14em;
+  height: 14em;
+}
+
+.info-btn:hover .label-btn{
+    color: aliceblue;
+}
+
+.info-btn:active {
+  transform: scale(0.97);
+}
+
+
+/* css de página de servicios */
+
+
+.service-info {
+  width: 40%;
+  height: 254px;
+  background: #3e4146;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10 0 10 0;
+}
+
+.service-info:hover {
+  width: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: none;
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.service-info:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  text-align: center;
+  padding: 2px;
+  z-index: 1;
+}
+
+.service-info:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}

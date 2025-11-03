@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"; 
+import { Highlighter } from "./magicui/highlighter";
 
 
 
@@ -25,11 +26,10 @@ export const About = () => {
 
         </div>
 
-        <div className="flex justify-center align-text-top">
+        <div className="flex justify-center align-text-top mt-20">
 
-           <h4 className="text-2xl md:text-3xl md:text-start text-center">¡Hola! <br /> Me llamo Elena. Copywriter y Social Media Manager. <br/> Estoy aquí para ayudarte a alcanzar tus objetivos y crecer junto a tí.</h4>
-
-          
+           <h4 className="text-2xl md:text-3xl md:text-start text-center">¡Hola! Me llamo Elena. <span className="animate-fade-up animate-ease-in-out animate-delay-[1000ms] border-b-4 border-[#5a22f5] ">Copywriter y Social Media Manager.</span> <br/> Y estoy aquí para ayudarte a alcanzar tus objetivos y crecer junto a tí.</h4>
+         
         </div>
 
         
