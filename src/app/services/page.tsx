@@ -1,50 +1,88 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"; 
-import { services } from "@/data/data"
-import { Footer } from "@/components/footer";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
-import { TextReveal } from "@/components/magicui/text-reveal";
+import Image from "next/image";
+import { motion } from "motion/react";
+import { services } from "@/data/data";
 
-
-
-
-export default function ServiceHomePage() {
+export default function ServicesPage() {
   return (
-    <>
+    <main className="w-full py-24">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.25 }
+          }
+        }}
+        className="max-w-6xl mx-auto px-6 space-y-24"
+      >
+        <motion.h1
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 }
+          }}
+          className="text-center text-5xl font-bold text-[#5a22f5]"
+        >
+          Nuestros Servicios
+        </motion.h1>
 
-    <section className="border shadow-black-2xl mt-10">
+        {services.map((service, index) => (
+          <motion.section
+            key={service.id}
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className={`flex flex-col md:flex-row items-center gap-10 ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            }`}
+          >
+            {/* Imagen con Parallax suave */}
+            <motion.div
+              whileHover={{ scale: 1.04, y: -6 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="relative w-full md:w-1/2 h-64 md:h-80 overflow-hidden rounded-2xl shadow-lg group"
+            >
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.12 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={""}
+                  alt={service.name}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+              </motion.div>
+            </motion.div>
 
-    
-     <div className="flex flex-col justify-center w-[100%] h-auto">
-     
-        {services.map(({ id, name, description }) => (
+            {/* Texto */}
+            <div className="md:w-1/2 space-y-4">
+              <h2 className="text-3xl md:text-4xl font-semibold text-[#5a22f5]">
+                {service.name}
+              </h2>
 
-        
-            <div className="w-[100%] h-auto flex justify-center my-5 border-b-4 border-gray" key={id}
-                        >
+              <p className="text-gray-700 leading-relaxed text-lg">
+                {service.description}
+              </p>
 
-                <div className="flex flex-col md:text-start text-center">
-                  <motion.div className="text-4xl p-10"
-                              initial={{ opacity: 0, y: 50 }}
-                              whileInView={{ opacity: 1, y: 0 }}
-                              viewport={{ once: true }}
-                              transition={{ duration: 2, ease: "easeOut" }}>
-                    {name}
-                  </motion.div>
-                  <div className="font-medium text-center">
-                  <TextReveal>{description}</TextReveal>
-                  </div>
-                </div>
-
+              <motion.button
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="px-6 py-2 rounded-full bg-[#5a22f5] text-white font-medium hover:bg-[#7238ff] transition"
+              >
+                Ver más
+              </motion.button>
             </div>
+          </motion.section>
         ))}
-
-     </div>
-
-     </section>
-
-     <Footer />
-    </>
-  )
+      </motion.div>
+    </main>
+  );
 }
