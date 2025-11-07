@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card } from "./card";
 import { ScrollVelocityContainer, ScrollVelocityRow, } from "./magicui/scroll-based-velocity";
+import { Slogan } from "./slogan";
 
 
 
@@ -14,12 +15,10 @@ export const Services = () => {
 
 
   <div className="text-center mb-12 max-w-xl mx-auto">
-    <h4 className="text-3xl md:text-4xl text-[#5a22f5] mb-2">
+    <h4 className="text-3xl md:text-4xl font-bold text-[#5a22f5] mb-2">
       Servicios para crecer
     </h4>
-    <p className="text-gray-700">
-      Explora y descubre cómo podemos acompañarte en tu crecimiento digital.
-    </p>
+    <Slogan />
   </div>
 
   <div className="flex justify-center gap-6 max-w-6xl mx-auto">
