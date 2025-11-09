@@ -3,9 +3,12 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { services } from "@/data/data";
+import { Footer } from "@/components/footer";
 
 export default function ServicesPage() {
   return (
+    <>
+    
     <main className="w-full py-24">
       <motion.div
         initial="hidden"
@@ -84,5 +87,7 @@ export default function ServicesPage() {
         ))}
       </motion.div>
     </main>
+    <Footer />
+    </>
   );
 }
