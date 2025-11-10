@@ -131,7 +131,7 @@ export const services: Service[] = [
     },
     {
         id: 2,
-        name: "CREACION DE CONTENIDO + RSS",
+        name: "CREACION DE CONTENIDO + RRSS",
         description: "El contenido es el tallo que conecta tu esencia con tu audiencia. Creamos, planificamos y publicamos con coherencia y estilo."
     },
     {
