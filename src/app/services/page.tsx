@@ -21,6 +21,7 @@ export default function ServicesPage() {
         }}
         className="max-w-6xl mx-auto px-6 space-y-24"
       >
+
         <motion.h1
           variants={{
             hidden: { opacity: 0, y: 20 },
@@ -34,11 +35,10 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <motion.section
             key={service.id}
-            variants={{
-              hidden: { opacity: 0, y: 40 },
-              visible: { opacity: 1, y: 0 }
-            }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+             initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2, ease: "easeOut" }}
             className={`flex flex-col md:flex-row items-center gap-10 ${
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
