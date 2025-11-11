@@ -67,9 +67,13 @@ export default function ServicesPage() {
 
             {/* Texto */}
             <div className="md:w-1/2 space-y-4">
-              <h2 className="text-3xl md:text-4xl font-semibold text-[#5a22f5]">
+              <motion.h2 className="text-3xl md:text-4xl font-semibold text-[#5a22f5]"
+                          initial={{ opacity: 0, y: -50 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 2, ease: "easeOut" }}>
                 {service.name}
-              </h2>
+              </motion.h2>
 
               <p className="text-gray-700 leading-relaxed text-lg">
                 {service.description}
