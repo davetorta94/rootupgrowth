@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { services } from "@/data/data";
 import { Footer } from "@/components/footer";
+import Link from "next/link";
 
 export default function ServicesPage() {
   return (
@@ -84,7 +85,9 @@ export default function ServicesPage() {
                 whileTap={{ scale: 0.96 }}
                 className="px-6 py-2 rounded-full bg-[#5a22f5] text-white font-medium hover:bg-[#7238ff] transition"
               >
-                Ver más
+                <Link href="/form">
+                  Ver más
+                </Link>
               </motion.button>
             </div>
           </motion.section>
