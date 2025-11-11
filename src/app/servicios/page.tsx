@@ -10,7 +10,7 @@ export default function ServicesPage() {
   return (
     <>
     
-    <main className="w-full py-24">
+    <main className="w-full py-10 md:py-24">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -52,7 +52,7 @@ export default function ServicesPage() {
             >
               <motion.div
                 initial={{ scale: 1 }}
-                whileHover={{ scale: 1.12 }}
+                whileTap={{ scale: 1.12 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
                 className="absolute inset-0"
               >
