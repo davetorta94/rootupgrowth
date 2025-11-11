@@ -57,7 +57,7 @@ export default function ServicesPage() {
                 className="absolute inset-0"
               >
                 <Image
-                  src="/mariposa.png"
+                  src={service.img}
                   alt={service.name}
                   fill
                   className="object-cover"

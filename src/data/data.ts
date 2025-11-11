@@ -127,41 +127,49 @@ export const services: Service[] = [
     {
         id: 1,
         name: "MENTORIAS",
-        description: "Para crecer en redes. Aqui empieza todo. Una idea, una marca, una intención estas sesiones sembramos claridad propósito y acción"
+        description: "Para crecer en redes. Aqui empieza todo. Una idea, una marca, una intención estas sesiones sembramos claridad propósito y acción",
+        img:"/mentorias.jpg"
     },
     {
         id: 2,
         name: "CREACION DE CONTENIDO + RRSS",
-        description: "El contenido es el tallo que conecta tu esencia con tu audiencia. Creamos, planificamos y publicamos con coherencia y estilo."
+        description: "El contenido es el tallo que conecta tu esencia con tu audiencia. Creamos, planificamos y publicamos con coherencia y estilo.",
+        img:"/creacion-contenido.jpg"
     },
     {
         id: 3,
         name: "CAMPAÑAS DE PAID MEDIA",
-        description: "El viento sopla más fuerte cuando se invierte con cabeza. Campañas que vuelan alto, con análisis, propósito y retorno."
+        description: "El viento sopla más fuerte cuando se invierte con cabeza. Campañas que vuelan alto, con análisis, propósito y retorno.",
+        img:"/paid-media.jpg"
     },
     {
         id: 4,
         name: "EDICION DE VIDEO",
-        description: "El crecimiento se nota cuando hay movimiento. Editamos los videos que capturan lo que tu marca quiere expresar."
+        description: "El crecimiento se nota cuando hay movimiento. Editamos los videos que capturan lo que tu marca quiere expresar.",
+        img:"/edicion-video.jpg"
     },
     {
         id: 5,
         name: "MANEJO DE REDES SOCIALES",
-        description: "Para que tu presencia digital tenga base sólida y crezca sana. Tú te enfocas en tu negocio, yo riego tu comunidad."
+        description: "Para que tu presencia digital tenga base sólida y crezca sana. Tú te enfocas en tu negocio, yo riego tu comunidad.",
+        img:"/redes-sociales.jpg"
     },
     {
         id: 6,
         name: "ESTRATEGIA DE CRECIMIENTO",
-        description: "Cada marca florece a su ritmo, pero con una estrategia adecuada, crece con fuerza y dirección. Diseñamos tu plan de expansión."
+        description: "Cada marca florece a su ritmo, pero con una estrategia adecuada, crece con fuerza y dirección. Diseñamos tu plan de expansión.",
+        img:"/marketing-crecimiento.jpg"
     },
     {
         id: 7,
         name: "FOTOGRAFIA PROFESIONAL",
-        description: "Cada hoja cuenta una historia. Sesiones para marcas que necesitan imágenes que comuniquen, inspiren y vendan."
+        description: "Cada hoja cuenta una historia. Sesiones para marcas que necesitan imágenes que comuniquen, inspiren y vendan.",
+        img:"/fotografia-profesional.jpg"
     },
     {
         id: 8,
         name: "DISEÑO GRÁFICO Y MAQUETACION",
-        description: "Deja que la gente se lleve tus flores a otros lugares. Diseño para piezas fisicas o digitales que complementan tu jardin"
+        description: "Deja que la gente se lleve tus flores a otros lugares. Diseño para piezas fisicas o digitales que complementan tu jardin",
+        img:"/diseno-grafico.jpg"
     }
 ]
