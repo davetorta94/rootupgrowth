@@ -21,16 +21,16 @@ export const Navbar = () => {
                 HOME
             </Link>
 
-            <Link href={"/services"} className="px-4">
-                SERVICES
+            <Link href={"/servicios"} className="px-4">
+                SERVICIOS
             </Link>
 
             <Link href={"/cursos"} className="px-4">
                 CURSOS
             </Link>
 
-            <Link href={"/title"} className="px-4">
-                RESULTS
+            <Link href={"/tarifas"} className="px-4">
+                TARIFAS
             </Link>
 
             <Link href={"/title"} className="px-4">
@@ -49,7 +49,7 @@ export const Navbar = () => {
                             HOME
                         </Link>
 
-                        <Link href={"/services"} >
+                        <Link href={"/servicios"} >
                             SERVICIOS
                         </Link>
 
@@ -57,11 +57,11 @@ export const Navbar = () => {
                             CURSOS
                         </Link>
 
-                        <Link href={"/title"} >
-                            RESULTS
+                        <Link href={"/tarifas"} >
+                            TARIFAS
                         </Link>
 
-                        <Link href={"/title"} >
+                        <Link href={"/"} >
                             ABOUT
                         </Link>
                     </div>
