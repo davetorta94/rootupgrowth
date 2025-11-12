@@ -33,7 +33,7 @@ export const Services = () => {
   </div>
 
   <div className="flex justify-center">
-    <Link href={"/services"}>
+    <Link href={"/servicios"}>
         <button className="info-btn">
           <span className="transition-btn"></span>
           <span className="gradient-btn"></span>
