@@ -6,10 +6,10 @@ export type Brand = {
     img: string;
 }
 
-export type Price = {
+export type Plan = {
     id: number;
-    img: string;
-    logo: string;
+    name: string;
+    description: string;
 }
 
 export type Service = {

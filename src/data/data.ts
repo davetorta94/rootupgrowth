@@ -2,7 +2,7 @@
 
 // AQUI VAN LAS MARCAS Y LOGOS CON LOS QUE ROOT UP GROWTH HA TRABAJADO
 
-import { Brand, Price, Service } from "./definitions";
+import { Brand, Plan, Service } from "./definitions";
 
 
 export const brands: Brand[] = [
@@ -119,8 +119,12 @@ export const brands: Brand[] = [
 
 // AQUI VAN LOS PREMIOS
 
-export const premios: Price[] = [
-    
+export const tarifas: Plan[] = [
+    {
+        id: 1,
+        name: "Tarifa Tallo",
+        description: ""
+    }
 ]
 
 export const services: Service[] = [

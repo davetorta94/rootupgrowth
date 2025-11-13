@@ -17,23 +17,23 @@ export const Navbar = () => {
         {/* MENU */}
         <div className="hidden md:flex">
 
-            <Link href={"/"} className="px-4">
+            <Link href={"/"} className="px-4 hover:underline">
                 HOME
             </Link>
 
-            <Link href={"/servicios"} className="px-4">
+            <Link href={"/servicios"} className="px-4 hover:underline">
                 SERVICIOS
             </Link>
 
-            <Link href={"/cursos"} className="px-4">
+            <Link href={"/cursos"} className="px-4 hover:underline">
                 CURSOS
             </Link>
 
-            <Link href={"/tarifas"} className="px-4">
+            <Link href={"/tarifas"} className="px-4 hover:underline">
                 TARIFAS
             </Link>
 
-            <Link href={"/title"} className="px-4">
+            <Link href={"/title"} className="px-4 hover:underline">
                 ABOUT US
             </Link>
         </div>
@@ -45,23 +45,23 @@ export const Navbar = () => {
                 display ?
                 (
                     <div className="flex flex-col">
-                        <Link href={"/"} className="px-4">
+                        <Link href={"/"} className="px-4 hover:underline">
                             HOME
                         </Link>
 
-                        <Link href={"/servicios"} >
+                        <Link href={"/servicios"} className="hover:underline" >
                             SERVICIOS
                         </Link>
 
-                        <Link href={"/cursos"} >
+                        <Link href={"/cursos"} className="hover:underline">
                             CURSOS
                         </Link>
 
-                        <Link href={"/tarifas"} >
+                        <Link href={"/tarifas"} className="hover:underline">
                             TARIFAS
                         </Link>
 
-                        <Link href={"/"} >
+                        <Link href={"/"} className="hover:underline">
                             ABOUT
                         </Link>
                     </div>

@@ -40,7 +40,7 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 2, ease: "easeOut" }}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
+            className={`flex flex-col md:flex-row items-center gap-10 hover:shadow-2xl hover:rounded-2xl ${
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             </motion.div>
 
             {/* Texto */}
-            <div className="md:w-1/2 space-y-4">
+            <div className="md:w-1/2 space-y-4 px-6">
               <motion.h2 className="text-3xl md:text-4xl font-semibold text-[#5a22f5]"
                           initial={{ opacity: 0, y: -50 }}
                           whileInView={{ opacity: 1, y: 0 }}
