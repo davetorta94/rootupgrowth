@@ -122,8 +122,51 @@ export const brands: Brand[] = [
 export const tarifas: Plan[] = [
     {
         id: 1,
-        name: "Tarifa Tallo",
-        description: ""
+        name: "Semilla",
+        description: "Asesoria individual, guia paso a paso para marcas personales y pequeños negocios",
+        img: "/flor.png"
+    },
+    {
+        id: 2,
+        name: "Raiz Firme",
+        description: "Publicación, community management, revisión de estadisticas, informes mensuales, atención a DMs, respuesta a comentarios, soporte fines de semana.",
+        img: "/flor.png"
+    },
+    {
+        id: 3,
+        name: "Tallo",
+        description: "Incluye creación de textos posicionados con SEO adaptados a cada red social, una sesión de foto y video mensual, imágenes y diseño gráfico de posts, planificación de publicaciones, edición de video e informes de métricas mensuales.",
+        img: "/flor.png"
+    },
+    {
+        id: 4,
+        name: "Floración",
+        description: "Auditoria + plan estratégico (contenido, posicionamiento, engagement, objetivos)",
+        img: "/petalos.png"
+    },
+    {
+        id: 5,
+        name: "Polinización",
+        description: "Configuración, gestión y optimización de campañas en Meta Ads y TikTok Ads.",
+        img: "/petalos.png"
+    },
+    {
+        id: 6,
+        name: "Hoja Verde",
+        description: "Sesiones de fotografia producto, personal branding, lifestyle.",
+        img: "/petalos.png"
+    },
+    {
+        id: 7,
+        name: "Movimiento",
+        description: "Vídeos corporativos y contenido promocional extra, fuera de las cuatro piezas de vídeo mensuales de la Tarifa Tallo.",
+        img: "/tallo.png"
+    },
+    {
+        id: 8,
+        name: "Maceta",
+        description: "Para impresión o digital: catálogos, flyers, tarjetas,portadas, etc.",
+        img: "/tallo.png"
     }
 ]
 

@@ -10,7 +10,7 @@ export default function ServicesPage() {
   return (
     <>
     
-    <main className="w-full py-10 md:py-24">
+    <section className="w-full py-10 md:py-24">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -28,7 +28,7 @@ export default function ServicesPage() {
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
           }}
-          className="text-center text-5xl font-bold text-[#5a22f5]"
+          className="text-center text-6xl md:text-7xl font-bold mb-24 text-[#5a22f5]"
         >
           Nuestros Servicios
         </motion.h1>
@@ -93,7 +93,7 @@ export default function ServicesPage() {
           </motion.section>
         ))}
       </motion.div>
-    </main>
+    </section>
     <Footer />
     </>
   );
