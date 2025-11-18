@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { tarifas } from "@/data/data";
 import { Footer } from "@/components/footer";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 export default function TarifasGrid() {
   return (
@@ -34,12 +35,17 @@ export default function TarifasGrid() {
                 className="rounded-2xl mb-6 object-cover w-full h-64"
               /> 
 
-              <h3 className="text-3xl md:text-4xl font-semibold text-[#5a22f5] mb-4 text-center">
-                {name}
-              </h3>
-              <p className="text-gray-700 text-lg leading-relaxed text-center">
-                {description}
-              </p>
+              <div className="text-3xl md:text-4xl font-semibold text-[#5a22f5] mb-4 text-center">
+                <TextAnimate animation="slideUp" by="word">
+                  {name}
+                </TextAnimate>
+              </div>
+
+              <div className="text-gray-700 text-lg leading-relaxed text-center">
+                <TextAnimate animation="slideUp" by="word">
+                  {description}
+                </TextAnimate>
+              </div>
 
               <motion.button
                 whileTap={{ scale: 0.95 }}

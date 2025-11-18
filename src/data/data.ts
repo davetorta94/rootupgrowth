@@ -159,7 +159,7 @@ export const tarifas: Plan[] = [
     {
         id: 7,
         name: "Movimiento",
-        description: "Vídeos corporativos y contenido promocional extra, fuera de las cuatro piezas de vídeo mensuales de la Tarifa Tallo.",
+        description: "Videos corporativos y contenido promocional extra, fuera de las cuatro piezas de vídeo mensuales de la Tarifa Tallo.",
         img: "/tallo.png"
     },
     {
