@@ -45,23 +45,23 @@ export const Navbar = () => {
                 display ?
                 (
                     <div className="flex flex-col">
-                        <Link href={"/"} className="px-4 hover:underline h-2">
+                        <Link href={"/"} className="px-4 hover:underline">
                             HOME
                         </Link>
 
-                        <Link href={"/servicios"} className="hover:underline h-2" >
+                        <Link href={"/servicios"} className="hover:underline" >
                             SERVICIOS
                         </Link>
 
-                        <Link href={"/cursos"} className="hover:underline h-2">
+                        <Link href={"/cursos"} className="hover:underline">
                             CURSOS
                         </Link>
 
-                        <Link href={"/tarifas"} className="hover:underline h-2">
+                        <Link href={"/tarifas"} className="hover:underline">
                             TARIFAS
                         </Link>
 
-                        <Link href={"/"} className="hover:underline h-2">
+                        <Link href={"/"} className="hover:underline">
                             ABOUT
                         </Link>
                     </div>
