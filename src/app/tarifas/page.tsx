@@ -5,6 +5,7 @@ import Image from "next/image";
 import { tarifas } from "@/data/data";
 import { Footer } from "@/components/footer";
 import { TextAnimate } from "@/components/magicui/text-animate";
+import Link from "next/link";
 
 export default function TarifasGrid() {
   return (
@@ -52,7 +53,9 @@ export default function TarifasGrid() {
                 className="mt-8 mx-auto bg-[#5a22f5] text-white font-medium px-8 py-3 rounded-full 
                            shadow-md hover:shadow-lg hover:bg-[#4a18d5] transition-all"
               >
-                Saber más
+                <Link href={"/form"}>
+                  Saber más
+                </Link>
               </motion.button>
             </motion.div>
           ))}
