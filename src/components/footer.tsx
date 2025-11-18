@@ -1,41 +1,63 @@
-import Link from "next/link"
+"use client";
 
+import { motion } from "motion/react";
+import Link from "next/link";
 
-export const Footer = () => {
+export function Footer() {
   return (
-    <>
-      <footer className="w-full h-auto flex flex-col md:flex-row  bg-amber-50 justify-center md:justify-around border-t-black border-1">
+    <footer className="bg-[#33118e] text-white pt-20 pb-12 mt-32 relative">
+      <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-3 gap-16">
+        
+        {/* Branding */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-bold mb-4">Root Up Growth 🌿</h3>
+          <p className="text-sm text-[#e8e6ff] leading-relaxed">
+            Te ayudamos a hacer crecer tu presencia online con estrategia,
+            creatividad y contenido auténtico.
+          </p>
+        </motion.div>
 
-        <div className="items-center">
+        {/* Enlaces */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          <h4 className="text-xl font-semibold mb-4">Enlaces útiles</h4>
+          <ul className="space-y-3 text-[#e8e6ff]">
+            <li><Link href="/servicios" className="hover:text-white">Servicios</Link></li>
+            <li><Link href="/tarifas" className="hover:text-white">Tarifas y Planes</Link></li>
+          </ul>
+        </motion.div>
 
-            
-                <Link href={"/"} className="px-4">
-                    Home
-                </Link>
-            
+        {/* Redes */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          <h4 className="text-xl font-semibold mb-4">Sígueme</h4>
+          <p className="text-[#e8e6ff] mb-4">Contenido, consejos y más:</p>
+          <div className="flex gap-4">
+            <Link href="https://www.instagram.com/fridaboserni/" className="hover:text-white">Instagram</Link>
+            <Link href="https://www.tiktok.com/@fridaboserni" className="hover:text-white">TikTok</Link>
+            <Link href="https://www.linkedin.com/in/elenabotana/" className="hover:text-white">LinkedIn</Link>
+          </div>
+        </motion.div>
 
-            
-                <Link href={"/"} className="px-4">
-                    Home
-                </Link>
-            
+      </div>
 
-            
-                <Link href={"/"} className="px-4">
-                    Home
-                </Link>
-            
-
-            
-                <Link href={"/"} className="px-4">
-                    Home
-                </Link>
-            
-            
-        </div>
-
-      </footer>
-    </>
-  )
+      {/* Copyright */}
+      <div className="mt-16 pt-8 border-t border-[#4a2fc9] text-center text-sm text-[#cfcaff]">
+        © {new Date().getFullYear()} Root Up Growth by Frida Boserni — Todos los derechos reservados.
+      </div>
+    </footer>
+  );
 }
 

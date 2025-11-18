@@ -17,23 +17,23 @@ export const Navbar = () => {
         {/* MENU */}
         <div className="hidden md:flex">
 
-            <Link href={"/"} className="px-4 hover:underline">
+            <Link href={"/"} className="px-4 hover:underline h-2">
                 HOME
             </Link>
 
-            <Link href={"/servicios"} className="px-4 hover:underline">
+            <Link href={"/servicios"} className="px-4 hover:underline h-2">
                 SERVICIOS
             </Link>
 
-            <Link href={"/cursos"} className="px-4 hover:underline">
+            <Link href={"/cursos"} className="px-4 hover:underline h-2">
                 CURSOS
             </Link>
 
-            <Link href={"/tarifas"} className="px-4 hover:underline">
+            <Link href={"/tarifas"} className="px-4 hover:underline h-2">
                 TARIFAS
             </Link>
 
-            <Link href={"/title"} className="px-4 hover:underline">
+            <Link href={"/title"} className="px-4 hover:underline h-2">
                 ABOUT US
             </Link>
         </div>
@@ -45,23 +45,23 @@ export const Navbar = () => {
                 display ?
                 (
                     <div className="flex flex-col">
-                        <Link href={"/"} className="px-4 hover:underline">
+                        <Link href={"/"} className="px-4 hover:underline h-2">
                             HOME
                         </Link>
 
-                        <Link href={"/servicios"} className="hover:underline" >
+                        <Link href={"/servicios"} className="hover:underline h-2" >
                             SERVICIOS
                         </Link>
 
-                        <Link href={"/cursos"} className="hover:underline">
+                        <Link href={"/cursos"} className="hover:underline h-2">
                             CURSOS
                         </Link>
 
-                        <Link href={"/tarifas"} className="hover:underline">
+                        <Link href={"/tarifas"} className="hover:underline h-2">
                             TARIFAS
                         </Link>
 
-                        <Link href={"/"} className="hover:underline">
+                        <Link href={"/"} className="hover:underline h-2">
                             ABOUT
                         </Link>
                     </div>
