@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { services } from "@/data/data";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
+import { Cta } from "@/components/CTA";
 
 export default function ServicesPage() {
   return (
@@ -83,9 +84,9 @@ export default function ServicesPage() {
               <motion.button
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
-                className="px-6 py-2 rounded-full bg-[#5a22f5] text-white font-medium hover:bg-[#7238ff] transition"
+                className="px-6 py-2 mb-4 rounded-full bg-[#5a22f5] text-white font-medium hover:bg-[#7238ff] transition"
               >
-                <Link href="/form">
+                <Link href="/tarifas">
                   Ver más
                 </Link>
               </motion.button>
@@ -93,6 +94,11 @@ export default function ServicesPage() {
           </motion.section>
         ))}
       </motion.div>
+
+      <div className="mt-20">
+        <Cta />
+      </div>
+
     </section>
     <Footer />
     </>

@@ -54,7 +54,7 @@ export default function TarifasGrid() {
                            shadow-md hover:shadow-lg hover:bg-[#4a18d5] transition-all"
               >
                 <Link href={"/form"}>
-                  Saber más
+                  ¡La quiero!
                 </Link>
               </motion.button>
             </motion.div>
