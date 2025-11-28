@@ -48,6 +48,7 @@ export default function Form() {
         console.log("Correo enviado:", result.text);
         alert("Correo enviado correctamente");
         setSubmitted(true);
+        console.log(submitted)
       })
       .catch((error) => {
         console.log("Error al enviar el correo:", error.text);
