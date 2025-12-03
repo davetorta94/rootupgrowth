@@ -5,7 +5,7 @@ import { FormComponent } from "@/components/formComponent";
 import { getEnvVariables } from "../../helpers/getEnvVariables";
 import { useForm } from "../../helpers/useForm";
 import emailjs from "@emailjs/browser";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 
@@ -36,6 +36,15 @@ export default function FormPage( ) {
   const planame = searchParams.get("plan")
     ? decodeURIComponent(searchParams.get("plan")!)
     : "";
+
+  useEffect(() => {
+    onInputChange({
+      target: {
+        name: "plan",
+        value: planame,
+      },
+    } as any);
+  }, [planame]);
 
   console.log("PLAN QUE LLEGA:", planame);
   
