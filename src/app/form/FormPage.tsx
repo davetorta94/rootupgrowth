@@ -28,7 +28,7 @@ const contactFields: ContactFormFields = {
 };
 
 export default function FormPage( ) {
-  const { onInputChange, name, email, message, plan } =
+  const { onInputChange, name, email, message } =
   useForm<ContactFormFields>(contactFields);
 
   const searchParams = useSearchParams();
@@ -37,7 +37,6 @@ export default function FormPage( ) {
     ? decodeURIComponent(searchParams.get("plan")!)
     : "";
 
-  console.log("param plan que llega", plan)
 
   console.log("PLAN QUE LLEGA:", planame);
   
