@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import React from "react";
 
-// Tipos de los props que el formulario necesita
 type FormComponentProps = {
   name: string;
   email: string;
   message: string;
+  plan: string;
   onInputChange: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
@@ -16,6 +16,7 @@ export const FormComponent = ({
   name,
   email,
   message,
+  plan,
   onInputChange,
   onSubmit,
 }: FormComponentProps) => {
@@ -27,7 +28,7 @@ export const FormComponent = ({
         {/* NAME */}
         <div className="input-container">
           <input
-            placeholder="Your name"
+            placeholder="Nombre"
             type="text"
             name="name"
             value={name}
@@ -38,7 +39,7 @@ export const FormComponent = ({
         {/* EMAIL */}
         <div className="input-container">
           <input
-            placeholder="Your email"
+            placeholder="Email"
             type="email"
             name="email"
             value={email}
@@ -49,15 +50,24 @@ export const FormComponent = ({
         {/* MESSAGE */}
         <div className="input-container">
           <textarea
-            placeholder="Your message"
+            placeholder="Cuentanos"
             name="message"
             value={message}
             onChange={onInputChange}
           />
         </div>
 
-        <button className="submit" type="submit">
-          Send message
+        <div className="hidden">
+          <textarea
+            placeholder="plan"
+            name="plan"
+            value={plan}
+            onChange={onInputChange}
+          />
+        </div>
+
+        <button className="submit hover:bg-black" type="submit">
+          Enviar
         </button>
       </form>
     </StyledWrapper>
@@ -134,6 +144,10 @@ const StyledWrapper = styled.div`
     width: 100%;
     border-radius: 0.5rem;
     text-transform: uppercase;
+  }
+
+  .submit:hover {
+    background-color: #000;
   }
 
   .signup-link {

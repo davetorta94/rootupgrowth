@@ -53,7 +53,10 @@ export default function TarifasGrid() {
                 className="mt-8 mx-auto bg-[#5a22f5] text-white font-medium px-8 py-3 rounded-full 
                            shadow-md hover:shadow-lg hover:bg-[#4a18d5] transition-all"
               >
-                <Link href={"/form"}>
+                <Link href={{
+                  pathname: "/form",
+                  query: { planame: JSON.stringify(name)}
+                }}>
                   ¡La quiero!
                 </Link>
               </motion.button>
