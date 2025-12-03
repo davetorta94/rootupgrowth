@@ -55,7 +55,7 @@ export default function TarifasGrid() {
               >
                 <Link href={{
                   pathname: "/form",
-                  query: { planame: JSON.stringify(name)}
+                  query: { planame:  encodeURIComponent(JSON.stringify(name))}
                 }}>
                   ¡La quiero!
                 </Link>

@@ -38,7 +38,11 @@ export default function FormPage( ) {
   let planame = null;
 
   try {
-    planame = planString ? JSON.parse(planString) : null
+    
+    if(planString){
+        const planDecoded = decodeURIComponent(planString);
+        planame = JSON.parse(planDecoded);
+    }
   } catch (error) {
     console.error("Error parsing plan:", error);
   }
