@@ -33,7 +33,7 @@ export default function FormPage( ) {
 
   const searchParams = useSearchParams();
 
-  let planame = searchParams.get("plan")
+  const planame = searchParams.get("plan")
     ? decodeURIComponent(searchParams.get("plan")!)
     : "";
 
