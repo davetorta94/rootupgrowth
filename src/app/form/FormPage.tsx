@@ -5,7 +5,7 @@ import { FormComponent } from "@/components/formComponent";
 import { getEnvVariables } from "../../helpers/getEnvVariables";
 import { useForm } from "../../helpers/useForm";
 import emailjs from "@emailjs/browser";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 
@@ -37,7 +37,7 @@ export default function FormPage( ) {
     ? decodeURIComponent(searchParams.get("plan")!)
     : "";
 
-  
+  console.log("param plan que llega", plan)
 
   console.log("PLAN QUE LLEGA:", planame);
   
