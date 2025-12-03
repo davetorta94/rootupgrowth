@@ -37,15 +37,7 @@ export default function FormPage( ) {
     ? decodeURIComponent(searchParams.get("plan")!)
     : "";
 
-  useEffect(() => {
-    onInputChange({
-      target: {
-        name: "plan",
-        value: planame,
-      },
-    } as any)
-    console.log(plan);
-  }, [planame]);
+  
 
   console.log("PLAN QUE LLEGA:", planame);
   
