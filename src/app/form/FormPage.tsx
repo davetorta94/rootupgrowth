@@ -78,7 +78,7 @@ export default function FormPage( ) {
           name={name}
           email={email}
           message={message}
-          plan={plan}
+          plan={planame}
           onInputChange={onInputChange}
           onSubmit={handleSubmit}
         />
