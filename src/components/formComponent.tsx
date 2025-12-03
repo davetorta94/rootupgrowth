@@ -21,6 +21,9 @@ export const FormComponent = ({
   onInputChange,
   onSubmit,
 }: FormComponentProps) => {
+
+    console.log(plan)
+
   return (
     <StyledWrapper>
       <form className="form" onSubmit={onSubmit}>
