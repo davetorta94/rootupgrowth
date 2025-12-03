@@ -134,8 +134,8 @@ const StyledWrapper = styled.div`
     display: block;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     background-color: #4F46E5;
     color: #ffffff;
     font-size: 0.875rem;

@@ -33,20 +33,11 @@ export default function FormPage( ) {
 
   const searchParams = useSearchParams();
 
-  const planString = searchParams.get('planame');
+  const planame = searchParams.get("plan")
+    ? decodeURIComponent(searchParams.get("plan")!)
+    : "";
 
-  let planame = null;
-
-  try {
-    
-    if(planString){
-        const planDecoded = decodeURIComponent(planString);
-        planame = JSON.parse(planDecoded);
-    }
-  } catch (error) {
-    console.error("Error parsing plan:", error);
-  }
-
+  console.log("PLAN QUE LLEGA:", planame);
   
 
   const [submitted, setSubmitted] = useState(false);
