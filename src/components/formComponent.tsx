@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 
+// Tipos de los props que el formulario necesita
 type FormComponentProps = {
   name: string;
   email: string;

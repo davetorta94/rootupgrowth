@@ -28,22 +28,24 @@ const contactFields: ContactFormFields = {
 };
 
 export default function FormPage( ) {
-  const { onInputChange, name, email, message } =
+  const { onInputChange, name, email, message, plan } =
   useForm<ContactFormFields>(contactFields);
 
-const searchParams = useSearchParams();
-const planame = searchParams.get("plan")
-  ? decodeURIComponent(searchParams.get("plan")!)
-  : "";
+  const searchParams = useSearchParams();
 
-useEffect(() => {
-  onInputChange({
-    target: {
-      name: "plan",
-      value: planame,
-    },
-  } as React.ChangeEvent<HTMLInputElement>);
-}, [planame, onInputChange]);
+  const planame = searchParams.get("plan")
+    ? decodeURIComponent(searchParams.get("plan")!)
+    : "";
+
+  useEffect(() => {
+    onInputChange({
+      target: {
+        name: "plan",
+        value: planame,
+      },
+    } as any)
+    console.log(plan);
+  }, [planame]);
 
   console.log("PLAN QUE LLEGA:", planame);
   
