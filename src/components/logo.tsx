@@ -5,7 +5,6 @@ import Image from "next/image";
 export const Logo = () => {
   return (
     <>
-    {/* LOGO */}
      <div className="hidden md:block animate-fade-up animate-ease-in-out animate-delay-[1500ms]">
           <Image 
           src="/logo.png"
