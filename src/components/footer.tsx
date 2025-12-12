@@ -41,7 +41,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/tarifas" className="hover:text-[#5a22f5]">
-                Tarifas y Planes PRUEBA
+                Tarifas y Planes
               </Link>
             </li>
           </ul>
