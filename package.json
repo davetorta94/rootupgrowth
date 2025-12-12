@@ -14,7 +14,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.523.0",
     "motion": "^12.23.24",
-    "next": "16.0.7",
+    "next": "14.2.35",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "rough-notation": "^0.5.1",
