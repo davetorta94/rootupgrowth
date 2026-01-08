@@ -20,7 +20,7 @@ export function TiktokNumberTicker() {
                 transition={{ duration: 1, ease: "easeOut" }}>
 
      <NumberTicker
-      value={3325}
+      value={4500}
       className="text-8xl font-medium tracking-tighter whitespace-pre-wrap text-amber-50 text-center"
       />
 
